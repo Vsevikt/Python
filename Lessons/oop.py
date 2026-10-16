@@ -2,6 +2,19 @@
 # __new__ - створення об'єкта
 # __init__ - ініціалізація об'єкта
 
+Player = type(
+    "Player",
+    (),
+    {
+        'role':'super admin',
+        'age':18,
+        'move':lambda self:f'Moving... ()'
+    }
+)
+
+p = Player()
+print(p.move(), p.role)
+
 class User:
     def __init__(self, name='unknown', age=18):
         self.__name = name
@@ -23,17 +36,21 @@ class User:
     def show_user(self):
         return f"{self.__name} is {self.age} years old"
 
+# ---
+
 # user = User("Alex", "30")
 # print(user.show_user())
 # print(user)
 
-user1 = User("Alex", 30)
-user2 = User(name="Bob")
-user3 = User(20)
-user4 = User()
+# user1 = User("Alex", 30)
+# user2 = User(name="Bob")
+# user3 = User(20)
+# user4 = User()
+
+# ---
 
 # print(user1.phone, user2.email, user3, user4)
-print(user1._User__name)
+# print(user1._User__name)
 
 
 # class Dog:
