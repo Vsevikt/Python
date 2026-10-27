@@ -1,0 +1,14 @@
+1. ProductManager — головний клас.
+2. Product — назва та ціна товару.
+3. ABC — абстрактний клас.
+4. LoggingMixin — виводить повідомлення.
+5. JsonMixin — перетворює дані в JSON.
+6. DiscountMixin — рахує знижку.
+7. object — базовий клас Python.
+
+Результат:
+Товар створено
+Milk 1000 грн
+Ціна зі знижкою: 850.0 грн
+{"name": "Milk", "price": 1000}
+[<class '__main__.ProductManager'>, <class '__main__.Product'>, <class 'abc.ABC'>, <class '__main__.LoggingMixin'>, <class '__main__.JsonMixin'>, <class '__main__.DiscountMixin'>, <class 'object'>]
